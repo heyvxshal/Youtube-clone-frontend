@@ -17,7 +17,7 @@ const commentsData = [
                 replies: [
                   {
                     name: "Holland Velazquez",
-                    text: "Quisque sodales consectetur elementum. Vivamus faucibus nisi non massa aliquam suscipit.Phasellus vestibulum, tortor vitae laoreet tempus, justo nunc finibus lorem, non auctor metus nisi ut eros. Fusce eu nisi accumsan, fermentum sem ultrices, sollicitudin metus. Vivamus efficitur convallis ipsum sit amet rutrum. Morbi in dolor ",
+                    text: "Quisque sodales consectetur elementum. Vivamus faucibus nisi non massa aliquam suscipit.Phasellus vestibulum, tortor vitae laoreet tempus, justo nunc finibus lorem, non auctor metus nisi ut eros. Fusce eu nisi accumsan, ",
                     replies: [
                       {
                         name: "Drew Ruiz",

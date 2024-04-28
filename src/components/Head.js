@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { AVATAR_IMG, LOGO_IMG } from "../utils/constants";
+import { AVATAR_ACCOUNT, LOGO_IMG } from "../utils/constants";
 import { useDispatch } from "react-redux";
 import { toggleMenu } from "../utils/appSlice";
 import useSearchSuggestions from "../hooks/useSearchSuggestions";
@@ -47,7 +47,7 @@ const Head = () => {
 
   return (
     <div className="grid grid-flow-col p-3 shadow-lg">
-      <div className="flex gap-2 items-center col-span-1">
+      <div className="flex gap-2 items-center col-span-1 mx-2">
         {hamburgerIcon}
 
         <img src={LOGO_IMG} alt="logo" className="h-6 mx-2" />
@@ -81,8 +81,8 @@ const Head = () => {
           )}
         </div>
       </div>
-      <div className="col-span-1 flex items-center justify-end ">
-        <img src={AVATAR_IMG} alt="user" className="h-12" />
+      <div className="col-span-1 flex items-center justify-end mx-2">
+        <img src={AVATAR_ACCOUNT} alt="user" className="w-12" />
       </div>
     </div>
   );
