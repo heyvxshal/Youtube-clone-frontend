@@ -11,7 +11,7 @@ const VideoCard = ({ info }) => {
         <img
           src={thumbnails.medium.url}
           alt="Thumbnail"
-          className="rounded-lg w-full"
+          className="rounded-lg w-full transition ease-in-out delay-150 hover:scale-105"
         />
         <ul>
           <li className="font-bold pt-3">{title}</li>

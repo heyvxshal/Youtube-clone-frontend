@@ -3,7 +3,7 @@ import "./App.css";
 import Body from "./components/Body";
 import Head from "./components/Head";
 import store from "./utils/store";
-import { Router, RouterProvider, createBrowserRouter } from "react-router-dom";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import MainContainer from "./components/MainContainer";
 import WatchPage from "./components/WatchPage";
 
