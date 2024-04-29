@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+## YouTube
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project aimed at replicating the core functionalities of the popular video-sharing platform YouTube. Developed using React and redux, this project encompasses various features including a home page, live chat, video comments, and a search function.
 
-## Available Scripts
+### Features:
 
-In the project directory, you can run:
+1. **Home Page:** The home page replicates the layout of YouTube's main page, displaying recommended videos and trending content.
 
-### `npm start`
+2. **Live Chat:** Utilizing **API polling** techniques without causing DOM bloating, the live chat feature enables users to engage in real-time conversations while watching videos. This feature is implemented with local data, simulating a chat environment without the need for real-time updates.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+3. **Video Comments:** Users can engage in discussions by leaving comments on videos. This feature supports **nested comments**, allowing for discussions to unfold at multiple levels.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+4. **Search:** The search function enables users to find videos based on keywords. Implemented with **caching** and **debouncing** techniques, search results are efficiently fetched and displayed, enhancing user experience.
 
-### `npm test`
+### Local Deployment Instructions:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To deploy the project locally, follow these steps:
 
-### `npm run build`
+1. Clone the GitHub repository to your local machine:
+   
+   ```bash
+   git clone https://github.com/heyvxshal/Youtube-frontend.git
+   ```
+2. Navigate to the project directory:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    ```bash
+   cd youtube-clone
+   ```
+3. Create an .env file in the root directory of the project.
+4. Inside the .env file, add the following line and replace YOUR_YOUTUBE_API_KEY with your YouTube API key:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    ```bash
+   REACT_APP_GOOGLE_API_KEY= youtube-api-key
+   ```
+5. Install project dependencies using npm or yarn:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    ```bash
+    npm install
+    ```
+6. Start the development server:
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+   ```bash
+    npm start
+    ```
+   
+7. Open your web browser and navigate to http://localhost:3000 to view the app.
+   
